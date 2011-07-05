@@ -7,5 +7,8 @@ source $DOT_FILES/shell/common.sh
 # Git completion support in bash
 source $DOT_FILES/git/git-completion
 
+# Fix for mysql gem
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH	
+
 # RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

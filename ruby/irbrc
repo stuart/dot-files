@@ -1,7 +1,9 @@
-begin
-  require 'irbtools'
-rescue LoadError
-  $stderr.puts "Please install 'irbtools' or add it to your Gemfile"
+if RUBY_VERSION >= "1.8.7"
+  begin
+    require 'irbtools'
+  rescue LoadError
+    $stderr.puts "Please install 'irbtools' or add it to your Gemfile"
+  end
 end
 
 class Object

@@ -1,14 +1,16 @@
-if $(which mate > /dev/null && false); then
-  EDITOR="mate -wl1"
-elif $(which nano > /dev/null && false); then
-  EDITOR="nano -w"
-elif $(which mvim > /dev/null); then
-  EDITOR="mvim"
-elif $(which gvim > /dev/null); then
-  EDITOR="gvim"
-else
-  EDITOR="vim"
-fi
+EDITOR="mate -wl1"
+
+# if $(which mate > /dev/null && false); then
+#   EDITOR="mate -wl1"
+# elif $(which nano > /dev/null && false); then
+#   EDITOR="nano -w"
+# elif $(which mvim > /dev/null); then
+#   EDITOR="mvim"
+# elif $(which gvim > /dev/null); then
+#   EDITOR="gvim"
+# else
+#   EDITOR="vim"
+# fi
 
 export VISUAL="$EDITOR"
 export GEM_OPEN_EDITOR="$EDITOR"
