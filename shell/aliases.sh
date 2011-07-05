@@ -39,3 +39,6 @@ alias colorslist="set | egrep 'COLOR_\w*'"  # lists all the colors
 
 alias jsonify='python -mjson.tool'
 
+# Textmate stuff
+alias et='mate .'
+alias testtail='tail -fn0 log/test.log'
